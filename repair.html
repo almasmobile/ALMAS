@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="فرم پذیرش و ثبت اطلاعات دستگاه برای تعمیر در الماس موبایل">
+<title>پذیرش تعمیرات — الماس موبایل</title>
+<link rel="icon" type="image/png" href="assets/logo-black.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="ALMAS">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="repair">
+<header class="site-header"><a href="index.html" class="brand"><img src="assets/logo-black.png" alt="الماس موبایل"></a></header>
+<main class="container">
+  <a href="index.html" class="back-link">بازگشت به خانه</a>
+  <h1 class="page-title">پذیرش تعمیرات</h1>
+  <p class="page-sub">مشخصات مشتری و دستگاه را برای ثبت پذیرش وارد کنید</p>
+  <form id="repair-form" novalidate>
+    <section class="section form-panel">
+      <h2>اطلاعات مشتری</h2>
+      <div class="form-group"><label class="field-label" for="repair-fullName">نام و نام خانوادگی</label><input type="text" id="repair-fullName" name="fullName" autocomplete="name" required></div>
+      <div class="form-group"><label class="field-label" for="repair-phone">شماره تماس پاسخگو</label><input type="tel" id="repair-phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="09xxxxxxxxx" required dir="ltr"></div>
+    </section>
+    <section class="section form-panel">
+      <h2>مشخصات دستگاه</h2>
+      <div class="form-group"><label class="field-label" for="repair-model">مدل گوشی</label><input type="text" id="repair-model" name="phoneModel" placeholder="مثلاً iPhone 13 Pro" required></div>
+      <div class="form-group"><label class="field-label" for="repair-color">رنگ دستگاه</label><input type="text" id="repair-color" name="deviceColor" placeholder="مثلاً آبی تیره" required></div>
+      <div class="form-group"><label class="field-label" for="repair-issue">شرح ایراد دستگاه</label><textarea id="repair-issue" name="issue" rows="4" placeholder="شرح کامل ایراد و توضیحات ظاهری دستگاه..." required></textarea></div>
+      <div class="lock-section" id="repair-lock-section">
+        <h2 class="lock-heading">رمز یا الگوی قفل دستگاه</h2>
+        
+        <div class="option-grid lock-type-grid">
+          <label class="option"><input type="radio" name="repairLockType" value="password" checked><span class="opt-title">پسورد / پین</span><span class="opt-price">رمز عددی یا حروفی</span></label>
+          <label class="option"><input type="radio" name="repairLockType" value="pattern"><span class="opt-title">الگو (Pattern)</span><span class="opt-price">رسم الگوی قفل</span></label>
+          <label class="option"><input type="radio" name="repairLockType" value="none"><span class="opt-title">بدون رمز</span><span class="opt-price">نیازی به رمز نیست</span></label>
+        </div>
+        <div class="form-group lock-field" id="repair-pass-group"><label class="field-label" for="repair-device-pass">رمز دستگاه (در صورت وجود)</label><input type="text" id="repair-device-pass" name="devicePass" dir="ltr" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="رمز عددی یا حروفی"></div>
+        <div class="form-group lock-field hidden" id="repair-pattern-group">
+          <label class="field-label">الگوی گوشی را رسم کنید</label>
+          <div class="pattern-wrap"><div class="pattern-pad" id="repair-pattern-pad"><div class="pattern-line"></div>
+            <div class="pattern-dot" data-index="1"></div><div class="pattern-dot" data-index="2"></div><div class="pattern-dot" data-index="3"></div>
+            <div class="pattern-dot" data-index="4"></div><div class="pattern-dot" data-index="5"></div><div class="pattern-dot" data-index="6"></div>
+            <div class="pattern-dot" data-index="7"></div><div class="pattern-dot" data-index="8"></div><div class="pattern-dot" data-index="9"></div>
+          </div></div>
+          <div class="pattern-actions"><button type="button" class="btn btn-secondary btn-small" id="repair-pattern-clear">پاک کردن الگو</button><span class="pattern-status" id="repair-pattern-status"></span></div>
+        </div>
+        <label class="consent-line hidden" id="repair-consent-wrap"><input type="checkbox" id="repair-consent"> مشتری با ثبت رمز یا الگوی قفل برای بررسی دستگاه موافقت کرده است.</label>
+      </div>
+    </section>
+    <section class="section form-panel">
+      <h2>هزینه حدودی تعمیر</h2>
+      <div class="form-group"><label class="field-label" for="repair-cost">هزینه تخمینی (تومان)</label><input type="number" id="repair-cost" name="cost" min="0" step="1000" inputmode="numeric" placeholder="مثلاً 2500000" dir="ltr"></div>
+      <p class="hint">هزینه نهایی پس از بررسی دستگاه و هماهنگی با مشتری مشخص می‌شود.</p>
+    </section>
+    <button type="submit" class="btn">ثبت پذیرش و آماده‌سازی پیامک</button>
+  </form>
+  <div class="sms-preview" id="sms-preview"></div>
+  <button type="button" class="btn btn-secondary hidden" id="copy-btn">کپی متن پیامک</button>
+  <p class="hint">پس از تأیید، پیامک آماده می‌شود و ارسال نهایی با تأیید شما انجام خواهد شد.</p>
+</main>
+<footer class="site-footer"><div class="footer-info"><div class="footer-logo"><img src="assets/logo-black.png" alt="لوگوی الماس موبایل"></div>
+  <div class="footer-address"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>تهران، بلوار مرزداران، خیابان سپهر، پاساژ پردیسان، جنب درب ورودی، پلاک ۴۶</span></div>
+  <div class="footer-actions"><a href="https://maps.app.goo.gl/MF4XovMW6DjFfsfNA" target="_blank" rel="noopener" class="btn btn-secondary">مسیریابی با گوگل مپ</a><a href="https://nshn.ir/7bvZhbNx4byh" target="_blank" rel="noopener" class="btn btn-secondary">مسیریابی با نشان</a></div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

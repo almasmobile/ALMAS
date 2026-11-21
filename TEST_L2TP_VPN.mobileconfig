@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.vpn.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>com.chatgpt.generated.test.l2tp.vpn</string>
+			<key>PayloadUUID</key>
+			<string>74796A43-93FC-42A0-B983-0986DC86CD64</string>
+			<key>UserDefinedName</key>
+			<string>TEST</string>
+			<key>VPNType</key>
+			<string>L2TP</string>
+			<key>PPP</key>
+			<dict>
+				<key>AuthName</key>
+				<string>Almas</string>
+				<key>AuthPassword</key>
+				<string>123</string>
+				<key>CommRemoteAddress</key>
+				<string>20.xyz20.com</string>
+				<key>TokenCard</key>
+				<false/>
+				<key>UseRSASecurID</key>
+				<false/>
+			</dict>
+			<key>IPSec</key>
+			<dict>
+				<key>AuthenticationMethod</key>
+				<string>SharedSecret</string>
+				<key>SharedSecret</key>
+				<string>654321</string>
+				<key>PromptForVPNPIN</key>
+				<false/>
+			</dict>
+			<key>IPv4</key>
+			<dict>
+				<key>OverridePrimary</key>
+				<true/>
+			</dict>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>L2TP VPN configuration</string>
+	<key>PayloadDisplayName</key>
+	<string>TEST</string>
+	<key>PayloadIdentifier</key>
+	<string>com.chatgpt.generated.test.l2tp.profile</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>C239F5C4-99FC-42E3-8284-155ACE950D38</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

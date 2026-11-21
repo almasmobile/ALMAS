@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="ثبت درخواست آپدیت متناسب با مدل آیفون، آیپد و اپل واچ در الماس موبایل">
+<title>آپدیت دستگاه — الماس موبایل 💎</title>
+<link rel="icon" type="image/png" href="assets/logo-black.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="ALMAS">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="update">
+<header class="site-header"><a href="index.html" class="brand"><img src="assets/logo-black.png" alt="الماس موبایل"></a></header>
+<main class="container">
+  <a href="index.html" class="back-link">بازگشت به خانه</a>
+  <h1 class="page-title">آپدیت متناسب با مدل دستگاه</h1>
+  <p class="page-sub">نوع دستگاه و مدل آن را انتخاب کنید تا هزینه به‌صورت خودکار محاسبه شود</p>
+  <form id="update-form" novalidate>
+    <section class="section form-panel">
+      <h2>۱. نوع دستگاه</h2>
+      <div class="option-grid">
+        <label class="option"><input type="radio" name="deviceType" value="iphone" checked><span class="opt-title">آیفون</span><span class="opt-price">iPhone</span></label>
+        <label class="option"><input type="radio" name="deviceType" value="samsung"><span class="opt-title">سامسونگ</span><span class="opt-price">Samsung</span></label>
+        <label class="option"><input type="radio" name="deviceType" value="ipad"><span class="opt-title">آیپد</span><span class="opt-price">iPad</span></label>
+        <label class="option"><input type="radio" name="deviceType" value="watch"><span class="opt-title">اپل واچ</span><span class="opt-price">Apple Watch</span></label>
+      </div>
+    </section>
+
+    <section class="section form-panel hidden" id="update-samsung-model-section-wrap"><h2>۲. مدل سامسونگ</h2><div class="form-group" id="update-samsung-model-section"><label class="field-label" for="update-samsung-model">مدل سامسونگ</label><select id="update-samsung-model" name="samsungModel"><option value="">انتخاب مدل سامسونگ</option>          <optgroup label="S Series"><option value="Galaxy S26 Ultra" data-year="2026" data-market-price="430000000">Galaxy S26 Ultra — 2026</option><option value="Galaxy S26+" data-year="2026" data-market-price="360000000">Galaxy S26+ — 2026</option><option value="Galaxy S26" data-year="2026" data-market-price="300000000">Galaxy S26 — 2026</option><option value="Galaxy S25 Ultra" data-year="2025" data-market-price="398000000">Galaxy S25 Ultra — 2025</option><option value="Galaxy S25+" data-year="2025" data-market-price="290000000">Galaxy S25+ — 2025</option><option value="Galaxy S25" data-year="2025" data-market-price="240000000">Galaxy S25 — 2025</option><option value="Galaxy S24 Ultra" data-year="2024" data-market-price="320000000">Galaxy S24 Ultra — 2024</option><option value="Galaxy S24+" data-year="2024" data-market-price="240000000">Galaxy S24+ — 2024</option><option value="Galaxy S24" data-year="2024" data-market-price="190000000">Galaxy S24 — 2024</option><option value="Galaxy S23 Ultra" data-year="2023" data-market-price="240000000">Galaxy S23 Ultra — 2023</option><option value="Galaxy S23+" data-year="2023" data-market-price="180000000">Galaxy S23+ — 2023</option><option value="Galaxy S23" data-year="2023" data-market-price="150000000">Galaxy S23 — 2023</option><option value="Galaxy S22 Ultra" data-year="2022" data-market-price="180000000">Galaxy S22 Ultra — 2022</option><option value="Galaxy S22+" data-year="2022" data-market-price="135000000">Galaxy S22+ — 2022</option><option value="Galaxy S22" data-year="2022" data-market-price="115000000">Galaxy S22 — 2022</option><option value="Galaxy S21 Ultra" data-year="2021" data-market-price="130000000">Galaxy S21 Ultra — 2021</option><option value="Galaxy S21+" data-year="2021" data-market-price="95000000">Galaxy S21+ — 2021</option><option value="Galaxy S21" data-year="2021" data-market-price="80000000">Galaxy S21 — 2021</option><option value="Galaxy S20 Ultra" data-year="2020" data-market-price="90000000">Galaxy S20 Ultra — 2020</option><option value="Galaxy S20+" data-year="2020" data-market-price="70000000">Galaxy S20+ — 2020</option><option value="Galaxy S20" data-year="2020" data-market-price="60000000">Galaxy S20 — 2020</option><option value="Galaxy S10+" data-year="2019" data-market-price="50000000">Galaxy S10+ — 2019</option><option value="Galaxy S10" data-year="2019" data-market-price="45000000">Galaxy S10 — 2019</option><option value="Galaxy S9+" data-year="2018" data-market-price="35000000">Galaxy S9+ — 2018</option><option value="Galaxy S9" data-year="2018" data-market-price="30000000">Galaxy S9 — 2018</option><option value="Galaxy S8+" data-year="2017" data-market-price="25000000">Galaxy S8+ — 2017</option><option value="Galaxy S8" data-year="2017" data-market-price="20000000">Galaxy S8 — 2017</option><option value="Galaxy S26 FE" data-year="2026" data-market-price="287700000">Galaxy S26 FE — 2026</option><option value="Galaxy S25 FE" data-year="2025" data-market-price="210000000">Galaxy S25 FE — 2025</option><option value="Galaxy S24 FE" data-year="2024" data-market-price="220000000">Galaxy S24 FE — 2024</option><option value="Galaxy S23 FE" data-year="2023" data-market-price="183000000">Galaxy S23 FE — 2023</option><option value="Galaxy S21 FE" data-year="2022" data-market-price="70000000">Galaxy S21 FE — 2022</option><option value="Galaxy S20 FE" data-year="2020" data-market-price="55000000">Galaxy S20 FE — 2020</option></optgroup>
+          <optgroup label="Z Fold / Z Flip"><option value="Galaxy Z Fold7" data-year="2025" data-market-price="541000000">Galaxy Z Fold7 — 2025</option><option value="Galaxy Z Flip7" data-year="2025" data-market-price="280000000">Galaxy Z Flip7 — 2025</option><option value="Galaxy Z Fold6" data-year="2024" data-market-price="420000000">Galaxy Z Fold6 — 2024</option><option value="Galaxy Z Flip6" data-year="2024" data-market-price="220000000">Galaxy Z Flip6 — 2024</option><option value="Galaxy Z Fold5" data-year="2023" data-market-price="330000000">Galaxy Z Fold5 — 2023</option><option value="Galaxy Z Flip5" data-year="2023" data-market-price="170000000">Galaxy Z Flip5 — 2023</option><option value="Galaxy Z Fold4" data-year="2022" data-market-price="240000000">Galaxy Z Fold4 — 2022</option><option value="Galaxy Z Flip4" data-year="2022" data-market-price="130000000">Galaxy Z Flip4 — 2022</option><option value="Galaxy Z Fold3" data-year="2021" data-market-price="170000000">Galaxy Z Fold3 — 2021</option><option value="Galaxy Z Flip3" data-year="2021" data-market-price="95000000">Galaxy Z Flip3 — 2021</option><option value="Galaxy Z Fold2" data-year="2020" data-market-price="120000000">Galaxy Z Fold2 — 2020</option><option value="Galaxy Z Flip" data-year="2020" data-market-price="75000000">Galaxy Z Flip — 2020</option></optgroup>
+          <optgroup label="A Series"><option value="Galaxy A56" data-year="2025" data-market-price="121500000">Galaxy A56 — 2025</option><option value="Galaxy A36" data-year="2025" data-market-price="90400000">Galaxy A36 — 2025</option><option value="Galaxy A26" data-year="2025" data-market-price="78980000">Galaxy A26 — 2025</option><option value="Galaxy A55" data-year="2024" data-market-price="118000000">Galaxy A55 — 2024</option><option value="Galaxy A35" data-year="2024" data-market-price="85000000">Galaxy A35 — 2024</option><option value="Galaxy A25" data-year="2023" data-market-price="75000000">Galaxy A25 — 2023</option><option value="Galaxy A54" data-year="2023" data-market-price="90000000">Galaxy A54 — 2023</option><option value="Galaxy A34" data-year="2023" data-market-price="75000000">Galaxy A34 — 2023</option><option value="Galaxy A24" data-year="2023" data-market-price="65000000">Galaxy A24 — 2023</option><option value="Galaxy A14" data-year="2023" data-market-price="45000000">Galaxy A14 — 2023</option><option value="Galaxy A53" data-year="2022" data-market-price="75000000">Galaxy A53 — 2022</option><option value="Galaxy A33" data-year="2022" data-market-price="65000000">Galaxy A33 — 2022</option><option value="Galaxy A23" data-year="2022" data-market-price="55000000">Galaxy A23 — 2022</option><option value="Galaxy A13" data-year="2022" data-market-price="40000000">Galaxy A13 — 2022</option><option value="Galaxy A52s" data-year="2021" data-market-price="65000000">Galaxy A52s — 2021</option><option value="Galaxy A52" data-year="2021" data-market-price="55000000">Galaxy A52 — 2021</option><option value="Galaxy A32" data-year="2021" data-market-price="55000000">Galaxy A32 — 2021</option><option value="Galaxy A22" data-year="2021" data-market-price="45000000">Galaxy A22 — 2021</option><option value="Galaxy A12" data-year="2020" data-market-price="35000000">Galaxy A12 — 2020</option><option value="Galaxy A51" data-year="2019" data-market-price="45000000">Galaxy A51 — 2019</option><option value="Galaxy A50" data-year="2019" data-market-price="35000000">Galaxy A50 — 2019</option><option value="Galaxy A30" data-year="2019" data-market-price="35000000">Galaxy A30 — 2019</option><option value="Galaxy A20" data-year="2019" data-market-price="30000000">Galaxy A20 — 2019</option><option value="Galaxy A10" data-year="2019" data-market-price="25000000">Galaxy A10 — 2019</option><option value="Galaxy A7 (2018)" data-year="2018" data-market-price="25000000">Galaxy A7 (2018) — 2018</option><option value="Galaxy A5 (2017)" data-year="2017" data-market-price="20000000">Galaxy A5 (2017) — 2017</option></optgroup>
+          <optgroup label="M Series"><option value="Galaxy M56" data-year="2025" data-market-price="115000000">Galaxy M56 — 2025</option><option value="Galaxy M55" data-year="2024" data-market-price="100000000">Galaxy M55 — 2024</option><option value="Galaxy M54" data-year="2023" data-market-price="85000000">Galaxy M54 — 2023</option><option value="Galaxy M53" data-year="2022" data-market-price="70000000">Galaxy M53 — 2022</option><option value="Galaxy M52" data-year="2021" data-market-price="60000000">Galaxy M52 — 2021</option><option value="Galaxy M51" data-year="2020" data-market-price="55000000">Galaxy M51 — 2020</option><option value="Galaxy M31" data-year="2020" data-market-price="40000000">Galaxy M31 — 2020</option><option value="Galaxy M30" data-year="2019" data-market-price="30000000">Galaxy M30 — 2019</option></optgroup>
+          <optgroup label="Note Series"><option value="Galaxy Note20 Ultra" data-year="2020" data-market-price="90000000">Galaxy Note20 Ultra — 2020</option><option value="Galaxy Note20" data-year="2020" data-market-price="75000000">Galaxy Note20 — 2020</option><option value="Galaxy Note10+" data-year="2019" data-market-price="65000000">Galaxy Note10+ — 2019</option><option value="Galaxy Note10" data-year="2019" data-market-price="55000000">Galaxy Note10 — 2019</option><option value="Galaxy Note9" data-year="2018" data-market-price="45000000">Galaxy Note9 — 2018</option><option value="Galaxy Note8" data-year="2017" data-market-price="35000000">Galaxy Note8 — 2017</option><option value="Galaxy Note FE" data-year="2017" data-market-price="18000000">Galaxy Note FE — 2017</option></optgroup>
+          <optgroup label="J Series"><option value="Galaxy J8" data-year="2018" data-market-price="25000000">Galaxy J8 — 2018</option><option value="Galaxy J7 (2017)" data-year="2017" data-market-price="20000000">Galaxy J7 (2017) — 2017</option><option value="Galaxy J5 (2017)" data-year="2017" data-market-price="18000000">Galaxy J5 (2017) — 2017</option><option value="Galaxy J7 (2016)" data-year="2016" data-market-price="15000000">Galaxy J7 (2016) — 2016</option><option value="Galaxy J5 (2016)" data-year="2016" data-market-price="12000000">Galaxy J5 (2016) — 2016</option><option value="Galaxy J2 (2015)" data-year="2015" data-market-price="8000000">Galaxy J2 (2015) — 2015</option></optgroup></select></div></section>
+    <section class="section form-panel" id="iphone-model-section">
+      <h2>۲. مدل آیفون</h2>
+      <div class="form-group"><label class="field-label" for="iphone-model">مدل دقیق گوشی</label>
+        <select id="iphone-model" name="iphoneModel" required>
+          <option value="">انتخاب مدل آیفون</option>
+          <optgroup label="iPhone 18"><option value="iPhone Duo" data-series="18">iPhone Duo</option><option value="iPhone 18 Pro Max" data-series="18">iPhone 18 Pro Max</option><option value="iPhone 18 Pro" data-series="18">iPhone 18 Pro</option></optgroup>
+          <optgroup label="iPhone 17"><option value="iPhone 17 Pro Max" data-series="17">iPhone 17 Pro Max</option><option value="iPhone 17 Pro" data-series="17">iPhone 17 Pro</option><option value="iPhone Air" data-series="17">iPhone Air</option><option value="iPhone 17" data-series="17">iPhone 17</option><option value="iPhone 17e" data-series="17">iPhone 17e</option></optgroup>
+          <optgroup label="iPhone 16"><option value="iPhone 16 Pro Max" data-series="16">iPhone 16 Pro Max</option><option value="iPhone 16 Pro" data-series="16">iPhone 16 Pro</option><option value="iPhone 16 Plus" data-series="16">iPhone 16 Plus</option><option value="iPhone 16" data-series="16">iPhone 16</option><option value="iPhone 16e" data-series="16">iPhone 16e</option></optgroup>
+          <optgroup label="iPhone 15"><option value="iPhone 15 Pro Max" data-series="15">iPhone 15 Pro Max</option><option value="iPhone 15 Pro" data-series="15">iPhone 15 Pro</option><option value="iPhone 15 Plus" data-series="15">iPhone 15 Plus</option><option value="iPhone 15" data-series="15">iPhone 15</option></optgroup>
+          <optgroup label="iPhone 14"><option value="iPhone 14 Pro Max" data-series="14">iPhone 14 Pro Max</option><option value="iPhone 14 Pro" data-series="14">iPhone 14 Pro</option><option value="iPhone 14 Plus" data-series="14">iPhone 14 Plus</option><option value="iPhone 14" data-series="14">iPhone 14</option></optgroup>
+          <optgroup label="iPhone 13"><option value="iPhone 13 Pro Max" data-series="13">iPhone 13 Pro Max</option><option value="iPhone 13 Pro" data-series="13">iPhone 13 Pro</option><option value="iPhone 13" data-series="13">iPhone 13</option><option value="iPhone 13 mini" data-series="13">iPhone 13 mini</option><option value="iPhone SE (3rd generation)" data-series="13">iPhone SE نسل سوم</option></optgroup>
+          <optgroup label="iPhone 12"><option value="iPhone 12 Pro Max" data-series="12">iPhone 12 Pro Max</option><option value="iPhone 12 Pro" data-series="12">iPhone 12 Pro</option><option value="iPhone 12" data-series="12">iPhone 12</option><option value="iPhone 12 mini" data-series="12">iPhone 12 mini</option></optgroup>
+          <optgroup label="iPhone 11"><option value="iPhone 11 Pro Max" data-series="11">iPhone 11 Pro Max</option><option value="iPhone 11 Pro" data-series="11">iPhone 11 Pro</option><option value="iPhone 11" data-series="11">iPhone 11</option><option value="iPhone SE (2nd generation)" data-series="11">iPhone SE نسل دوم</option></optgroup>
+          <optgroup label="iPhone X family"><option value="iPhone XS Max" data-series="10">iPhone XS Max</option><option value="iPhone XS" data-series="10">iPhone XS</option><option value="iPhone XR" data-series="10">iPhone XR</option><option value="iPhone X" data-series="10">iPhone X</option></optgroup>
+          <optgroup label="iPhone 8"><option value="iPhone 8 Plus" data-series="8">iPhone 8 Plus</option><option value="iPhone 8" data-series="8">iPhone 8</option></optgroup>
+          <optgroup label="iPhone 7"><option value="iPhone 7 Plus" data-series="7">iPhone 7 Plus</option><option value="iPhone 7" data-series="7">iPhone 7</option></optgroup>
+        </select>
+      </div>
+    </section>
+
+    <section class="section form-panel hidden" id="ipad-model-section">
+      <h2>۲. مدل آیپد</h2>
+      <div class="form-group"><label class="field-label" for="ipad-model">مدل و نسل دستگاه</label>
+        <select id="ipad-model" name="ipadModel">
+          <option value="">انتخاب مدل آیپد</option>
+          <optgroup label="iPad Pro"><option value="iPad Pro 13-inch (M5)" data-year="2025">iPad Pro 13 اینچ (M5) — ۲۰۲۵</option><option value="iPad Pro 11-inch (M5)" data-year="2025">iPad Pro 11 اینچ (M5) — ۲۰۲۵</option><option value="iPad Pro 13-inch (M4)" data-year="2024">iPad Pro 13 اینچ (M4) — ۲۰۲۴</option><option value="iPad Pro 11-inch (M4)" data-year="2024">iPad Pro 11 اینچ (M4) — ۲۰۲۴</option><option value="iPad Pro 12.9-inch (6th generation)" data-year="2022">iPad Pro 12.9 نسل ۶ — ۲۰۲۲</option><option value="iPad Pro 11-inch (4th generation)" data-year="2022">iPad Pro 11 نسل ۴ — ۲۰۲۲</option><option value="iPad Pro 12.9-inch (5th generation)" data-year="2021">iPad Pro 12.9 نسل ۵ — ۲۰۲۱</option><option value="iPad Pro 11-inch (3rd generation)" data-year="2021">iPad Pro 11 نسل ۳ — ۲۰۲۱</option><option value="iPad Pro 12.9-inch (4th generation)" data-year="2020">iPad Pro 12.9 نسل ۴ — ۲۰۲۰</option><option value="iPad Pro 11-inch (2nd generation)" data-year="2020">iPad Pro 11 نسل ۲ — ۲۰۲۰</option><option value="iPad Pro 12.9-inch (3rd generation)" data-year="2018">iPad Pro 12.9 نسل ۳ — ۲۰۱۸</option><option value="iPad Pro 11-inch (1st generation)" data-year="2018">iPad Pro 11 نسل ۱ — ۲۰۱۸</option><option value="iPad Pro 10.5-inch" data-year="2017">iPad Pro 10.5 اینچ — ۲۰۱۷</option><option value="iPad Pro 9.7-inch" data-year="2016">iPad Pro 9.7 اینچ — ۲۰۱۶</option><option value="iPad Pro 12.9-inch (2nd generation)" data-year="2017">iPad Pro 12.9 نسل ۲ — ۲۰۱۷</option><option value="iPad Pro 12.9-inch (1st generation)" data-year="2015">iPad Pro 12.9 نسل ۱ — ۲۰۱۵</option></optgroup>
+          <optgroup label="iPad Air"><option value="iPad Air 13-inch (M4)" data-year="2026">iPad Air 13 اینچ (M4) — ۲۰۲۶</option><option value="iPad Air 11-inch (M4)" data-year="2026">iPad Air 11 اینچ (M4) — ۲۰۲۶</option><option value="iPad Air 13-inch (M3)" data-year="2025">iPad Air 13 اینچ (M3) — ۲۰۲۵</option><option value="iPad Air 11-inch (M3)" data-year="2025">iPad Air 11 اینچ (M3) — ۲۰۲۵</option><option value="iPad Air 13-inch (M2)" data-year="2024">iPad Air 13 اینچ (M2) — ۲۰۲۴</option><option value="iPad Air 11-inch (M2)" data-year="2024">iPad Air 11 اینچ (M2) — ۲۰۲۴</option><option value="iPad Air (5th generation)" data-year="2022">iPad Air نسل ۵ — ۲۰۲۲</option><option value="iPad Air (4th generation)" data-year="2020">iPad Air نسل ۴ — ۲۰۲۰</option><option value="iPad Air (3rd generation)" data-year="2019">iPad Air نسل ۳ — ۲۰۱۹</option><option value="iPad Air 2" data-year="2014">iPad Air 2 — ۲۰۱۴</option><option value="iPad Air (1st generation)" data-year="2013">iPad Air نسل ۱ — ۲۰۱۳</option></optgroup>
+          <optgroup label="iPad"><option value="iPad (A16)" data-year="2025">iPad (A16) — ۲۰۲۵</option><option value="iPad (10th generation)" data-year="2022">iPad نسل ۱۰ — ۲۰۲۲</option><option value="iPad (9th generation)" data-year="2021">iPad نسل ۹ — ۲۰۲۱</option><option value="iPad (8th generation)" data-year="2020">iPad نسل ۸ — ۲۰۲۰</option><option value="iPad (7th generation)" data-year="2019">iPad نسل ۷ — ۲۰۱۹</option><option value="iPad (6th generation)" data-year="2018">iPad نسل ۶ — ۲۰۱۸</option><option value="iPad (5th generation)" data-year="2017">iPad نسل ۵ — ۲۰۱۷</option></optgroup>
+          <optgroup label="iPad mini"><option value="iPad mini (A20 Pro)" data-year="2026">iPad mini (A20 Pro) — ۲۰۲۶</option><option value="iPad mini (A17 Pro)" data-year="2024">iPad mini (A17 Pro) — ۲۰۲۴</option><option value="iPad mini (6th generation)" data-year="2021">iPad mini نسل ۶ — ۲۰۲۱</option><option value="iPad mini (5th generation)" data-year="2019">iPad mini نسل ۵ — ۲۰۱۹</option><option value="iPad mini 4" data-year="2015">iPad mini 4 — ۲۰۱۵</option><option value="iPad mini 3" data-year="2014">iPad mini 3 — ۲۰۱۴</option><option value="iPad mini 2" data-year="2013">iPad mini 2 — ۲۰۱۳</option></optgroup>
+        </select>
+      </div>
+      <p class="hint">سال عرضه از روی مدل و نسل انتخابی تشخیص داده می‌شود؛ نیازی به واردکردن سال ساخت نیست.</p>
+    </section>
+
+    <section class="section form-panel hidden" id="watch-model-section">
+      <h2>۲. مشخصات اپل واچ</h2>
+      <div class="form-group"><label class="field-label" for="watch-model">مدل اپل واچ</label><select id="watch-model" name="watchModel"><option value="">انتخاب مدل اپل واچ</option><option value="Apple Watch Ultra 3">Apple Watch Ultra 3</option><option value="Apple Watch Ultra 2">Apple Watch Ultra 2</option><option value="Apple Watch Ultra">Apple Watch Ultra</option><option value="Apple Watch Series 11">Apple Watch Series 11</option><option value="Apple Watch Series 10">Apple Watch Series 10</option><option value="Apple Watch Series 9">Apple Watch Series 9</option><option value="Apple Watch Series 8">Apple Watch Series 8</option><option value="Apple Watch SE">Apple Watch SE</option></select></div>
+      <p class="hint">هزینه آپدیت اپل واچ برای تمام مدل‌ها ثابت است.</p>
+    </section>
+
+    <section class="section form-panel" id="volume-section">
+      <h2>۳. حجم اطلاعات دستگاه</h2>
+      <div class="form-group volume-slider-wrap"><label class="field-label" for="update-volume">حجم اطلاعات (گیگابایت)</label><input type="range" id="update-volume" name="volume" min="1" max="2048" step="1" value="200" required dir="ltr"><div class="range-value-line"><strong id="update-volume-value">۲۰۰</strong><span>گیگابایت</span></div></div>
+      <p class="hint">زمان تقریبی بر اساس حجم انتخابی محاسبه می‌شود و ممکن است با توجه به وضعیت دستگاه تغییر کند.</p>
+      <div class="update-estimate" id="update-estimate" aria-live="polite">زمان تقریبی: —</div>
+    </section>
+
+    <section class="section form-panel">
+      <h2>۴. اطلاعات مشتری</h2>
+      <div class="form-group"><label class="field-label" for="update-firstName">نام</label><input type="text" id="update-firstName" name="firstName" autocomplete="given-name" required></div>
+      <div class="form-group"><label class="field-label" for="update-lastName">نام خانوادگی</label><input type="text" id="update-lastName" name="lastName" autocomplete="family-name" required></div>
+      <div class="form-group"><label class="field-label" for="update-phone">شماره تماس</label><input type="tel" id="update-phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="09xxxxxxxxx" required dir="ltr"></div>
+    </section>
+
+    <section class="section form-panel" id="apple-findmy-section">
+      <h2>۵. وضعیت Find My و اطلاعات Apple ID</h2>
+      <div class="form-group">
+        <label class="field-label" for="find-my-status">Find My روی دستگاه روشن است؟</label>
+        <select id="find-my-status" name="findMyStatus" required>
+          <option value="">انتخاب کنید</option>
+          <option value="yes">بله، روشن است</option>
+          <option value="no">خیر، خاموش است</option>
+        </select>
+      </div>
+      <div id="apple-credentials-wrap" class="hidden">
+      <div class="form-group">
+        <label class="field-label" for="update-apple-id">Apple ID</label>
+        <input type="text" id="update-apple-id" name="appleId" data-sensitive="true" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ایمیل یا شماره Apple ID" dir="ltr">
+      </div>
+      <div class="form-group">
+        <label class="field-label" for="update-apple-password">رمز Apple ID</label>
+        <div class="password-field"><input type="password" id="update-apple-password" name="applePassword" autocomplete="new-password" autocapitalize="off" spellcheck="false" placeholder="رمز عبور Apple ID" dir="ltr"><button type="button" id="toggle-apple-password" aria-label="نمایش یا مخفی کردن رمز اپل آیدی">نمایش</button></div>
+      </div>
+      <label class="consent-line"><input type="checkbox" id="update-apple-consent"> مشتری با ثبت Apple ID و رمز آن در اطلاعات سفارش موافقت کرده است.</label>
+      </div>
+    </section>
+
+    <section class="section form-panel" id="update-lock-section">
+      <h2>۶. رمز دستگاه</h2>
+      <div class="option-grid lock-type-grid">
+        <label class="option" id="update-pattern-option"><input type="radio" name="credentialType" value="pattern"><span class="opt-title">الگو (Pattern)</span></label>
+        <label class="option selected" id="update-numeric-option"><input type="radio" name="credentialType" value="numeric" checked><span class="opt-title">رمز عددی</span></label>
+        <label class="option" id="update-text-option"><input type="radio" name="credentialType" value="text"><span class="opt-title">رمز عبور متنی</span></label>
+        <label class="option" id="update-none-option"><input type="radio" name="credentialType" value="none"><span class="opt-title">رمز ندارد</span></label>
+      </div>
+      <div id="numeric-pass-group" class="numeric-pass-group">
+        <div class="passcode-display" id="passcode-display" aria-label="رمز عددی واردشده"><span class="passcode-placeholder">رمز را وارد کنید</span></div>
+        <div class="passcode-keypad" id="passcode-keypad" aria-label="صفحه کلید رمز عددی">
+          <button type="button" data-digit="1">۱</button><button type="button" data-digit="2">۲</button><button type="button" data-digit="3">۳</button>
+          <button type="button" data-digit="4">۴</button><button type="button" data-digit="5">۵</button><button type="button" data-digit="6">۶</button>
+          <button type="button" data-digit="7">۷</button><button type="button" data-digit="8">۸</button><button type="button" data-digit="9">۹</button>
+          <span class="keypad-spacer"></span><button type="button" data-digit="0">۰</button><button type="button" class="keypad-delete" data-action="delete" aria-label="حذف آخرین رقم">⌫</button>
+        </div>
+        <button type="button" class="btn btn-secondary btn-small passcode-clear" id="passcode-clear">پاک کردن رمز</button>
+      </div>
+      <div id="text-pass-group" class="form-group hidden text-pass-group">
+        <label class="field-label" for="update-text-pass">رمز عبور دستگاه</label>
+        <div class="password-field"><input type="password" id="update-text-pass" name="devicePassText" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="رمز عبور دستگاه" dir="ltr"><button type="button" id="toggle-pass-visibility" aria-label="نمایش یا مخفی کردن رمز">نمایش</button></div>
+      </div>
+      <div id="update-pattern-group" class="form-group hidden">
+        <label class="field-label">الگوی قفل دستگاه را رسم کنید</label>
+        <div class="pattern-pad" id="update-pattern-pad" aria-label="صفحه رسم الگوی قفل">
+          <div class="pattern-line"></div>
+          <button type="button" class="pattern-dot" data-dot="1" aria-label="نقطه ۱"></button><button type="button" class="pattern-dot" data-dot="2" aria-label="نقطه ۲"></button><button type="button" class="pattern-dot" data-dot="3" aria-label="نقطه ۳"></button>
+          <button type="button" class="pattern-dot" data-dot="4" aria-label="نقطه ۴"></button><button type="button" class="pattern-dot" data-dot="5" aria-label="نقطه ۵"></button><button type="button" class="pattern-dot" data-dot="6" aria-label="نقطه ۶"></button>
+          <button type="button" class="pattern-dot" data-dot="7" aria-label="نقطه ۷"></button><button type="button" class="pattern-dot" data-dot="8" aria-label="نقطه ۸"></button><button type="button" class="pattern-dot" data-dot="9" aria-label="نقطه ۹"></button>
+        </div>
+        <p class="pattern-status" id="update-pattern-status" aria-live="polite"></p>
+        <button type="button" class="btn btn-secondary btn-small" id="update-pattern-clear">پاک کردن الگو</button>
+      </div>
+      <label class="consent-line" id="update-consent-wrap"><input type="checkbox" id="update-consent" required> مشتری با دریافت و استفاده از رمز دستگاه برای انجام آپدیت موافقت کرده است.</label>
+    </section>
+
+    <div class="total-box"><span>هزینه آپدیت:</span><span class="amount" id="update-price">—</span></div>
+    <button type="submit" class="btn">ثبت درخواست و آماده‌سازی پیامک</button>
+  </form>
+  <div class="sms-preview" id="sms-preview"></div>
+  <button type="button" class="btn btn-secondary hidden" id="copy-btn">کپی متن پیامک</button>
+  <p class="hint">پس از تأیید، پیامک آماده می‌شود و ارسال نهایی با تأیید شما انجام خواهد شد.</p>
+</main>
+<footer class="site-footer"><div class="footer-info"><div class="footer-logo"><img src="assets/logo-black.png" alt="لوگوی الماس موبایل"></div>
+  <div class="footer-address"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>تهران، بلوار مرزداران، خیابان سپهر، پاساژ پردیسان، جنب درب ورودی، پلاک ۴۶</span></div>
+  <div class="footer-actions"><a href="https://maps.app.goo.gl/MF4XovMW6DjFfsfNA" target="_blank" rel="noopener" class="btn btn-secondary">مسیریابی با گوگل مپ</a><a href="https://nshn.ir/7bvZhbNx4byh" target="_blank" rel="noopener" class="btn btn-secondary">مسیریابی با نشان</a></div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

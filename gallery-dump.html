@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<title>تخلیه گالری در هارد — الماس موبایل 💎</title>
+<link rel="icon" type="image/png" href="assets/logo-black.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="ALMAS">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="gallery-dump">
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="assets/logo-black.png" alt="الماس موبایل" >
+  </a>
+</header>
+
+<main class="container">
+  <a href="index.html" class="back-link">بازگشت به خانه</a>
+  <h1 class="page-title">تخلیه گالری در هارد</h1>
+  <form id="gallery-dump-form" novalidate>
+    <div class="section">
+      <h2>حجم اطلاعات</h2>
+      <div class="form-group">
+        <label class="field-label" for="gallery-gb">حجم اطلاعات (گیگابایت)</label>
+        <input type="range" id="gallery-gb" name="gb" min="1" max="2048" step="1" value="100" required dir="ltr">
+        <span class="hint">حجم انتخاب‌شده: <strong id="gallery-gb-value">۱۰۰</strong> گیگابایت</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>رمز گوشی</h2>
+      <div class="option-grid lock-type-grid">
+        <label class="option selected">
+          <input type="radio" name="galleryLockType" value="password" checked>
+          <span class="opt-title">پین / پسورد</span>
+          <span class="opt-price">رمز عددی یا متنی</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="galleryLockType" value="pattern">
+          <span class="opt-title">الگو (Pattern)</span>
+          <span class="opt-price">رسم الگوی کشیدنی</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="galleryLockType" value="none">
+          <span class="opt-title">رمز ندارد</span>
+          <span class="opt-price">گوشی بدون قفل است</span>
+        </label>
+      </div>
+      <div class="form-group" id="gallery-pass-group">
+        <label class="field-label" for="gallery-phone-pass">رمز عبور گوشی (پین یا رمز)</label>
+        <div class="password-field">
+          <input type="password" id="gallery-phone-pass" name="phonePass" dir="ltr" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="رمز یا پین گوشی">
+          <button type="button" id="gallery-toggle-pass" aria-label="نمایش یا مخفی کردن رمز">نمایش</button>
+        </div>
+      </div>
+      <div class="form-group lock-field hidden" id="gallery-pattern-group">
+        <label class="field-label">الگوی گوشی را رسم کنید</label>
+        <div class="pattern-wrap">
+          <div class="pattern-pad" id="gallery-pattern-pad">
+            <div class="pattern-line" id="gallery-pattern-line"></div>
+            <div class="pattern-dot" data-index="1"></div><div class="pattern-dot" data-index="2"></div><div class="pattern-dot" data-index="3"></div>
+            <div class="pattern-dot" data-index="4"></div><div class="pattern-dot" data-index="5"></div><div class="pattern-dot" data-index="6"></div>
+            <div class="pattern-dot" data-index="7"></div><div class="pattern-dot" data-index="8"></div><div class="pattern-dot" data-index="9"></div>
+          </div>
+        </div>
+        <div class="pattern-actions">
+          <button type="button" class="btn btn-secondary btn-small" id="gallery-pattern-clear">پاک کردن الگو</button>
+          <span class="pattern-status" id="gallery-pattern-status"></span>
+        </div>
+      </div>
+      <label class="consent-line" style="margin-top:16px;align-items:flex-start;"><input type="checkbox" id="gallery-credentials-consent"><span>مشتری با ارسال و ثبت رمز گوشی در جزئیات سفارش موافقت کرده است.</span></label>
+    </div>
+
+    <div class="section">
+      <h2>اطلاعات شما</h2>
+      <div class="form-group">
+        <label class="field-label" for="firstName">نام</label>
+        <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+      </div>
+      <div class="form-group">
+        <label class="field-label" for="lastName">نام خانوادگی</label>
+        <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+      </div>
+      <div class="form-group">
+        <label class="field-label" for="phone">شماره موبایل</label>
+        <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="09xxxxxxxxx" required dir="ltr">
+      </div>
+    </div>
+
+    <div class="total-box">
+      <span>هزینه تخمینی:</span>
+      <span class="amount" id="gallery-calc-price">۱٬۵۰۰٬۰۰۰ تومان</span>
+    </div>
+    <button type="submit" class="btn">ثبت درخواست و آماده‌سازی پیامک</button>
+  </form>
+  <div class="sms-preview" id="sms-preview"></div>
+  <button type="button" class="btn btn-secondary hidden" id="copy-btn">کپی متن پیامک</button>
+  <p class="hint">پس از کلیک، اپلیکیشن پیامک گوشی شما با متن آماده باز می‌شود؛ ارسال نهایی را خودتان تأیید کنید.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-info">
+    <div class="footer-logo">
+    <img src="assets/logo-black.png" alt="لوگوی الماس موبایل" >
+    </div>
+    <div class="footer-address">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+      <span>تهران، بلوار مرزداران، خیابان سپهر، پاساژ پردیسان، جنب درب ورودی، پلاک ۴۶</span>
+    </div>
+    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; justify-content: center;">
+      <a href="https://maps.app.goo.gl/MF4XovMW6DjFfsfNA" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 13px; padding: 10px 16px; width: auto;">مسیریابی با گوگل مپ</a>
+      <a href="https://nshn.ir/7bvZhbNx4byh" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 13px; padding: 10px 16px; width: auto;">مسیریابی با نشان</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
